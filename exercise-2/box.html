@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box Model Exercise 2</title>
+<style>
+   
+h1{
+    font-family: Arial;
+    font-size: x-large;
+}
+
+ .box {
+  width: 150px;
+  height: 150px;
+ position: absolute;
+}
+   .pink{
+    background-color: hotpink;
+    top: 120px;
+    left: 50px;
+    z-index: 1;
+   }
+
+   .green{
+    background-color: mediumseagreen;
+    top: 200px;
+    left: 130px;
+    z-index: 3;
+   }
+
+   .black{
+    background-color: black;
+    top: 280px;
+    left: 210px;
+    z-index: 3;
+
+}
+</style>
+
 </head>
 <body>
-    
+    <h1>Box Model Exercise</h1>
+<div class="box pink"></div>
+<div class="box green"></div>
+<div class="box black"></div>
+
+
 </body>
 </html>
