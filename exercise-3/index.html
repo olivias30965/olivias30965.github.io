@@ -17,7 +17,7 @@
         div{
             text-align: center;
             height: 100px;
-            background-color: lightpink;
+            background-color: white;
             border: 1px solid black;
         }
         .flex{
@@ -33,28 +33,30 @@
 </head>
 <body>
      <Header>
-         <div style="width: 100%;"> Header </div>
+         <div style="width: 100%;"> header: col-100 <p> This entire layout is 1440px tall</p>
+            </div>
      </Header>
      
      
 <div class="flex">
-    <div style="width: 65%;">Col-1</div>
-    <div style="width: 40%;">Col-2</div>
+    <div style="width: 65%;">col-a</div>
+    <div style="width: 40%;">col-b <p>(width 200px)</p>
+</div>
    </div>
   
 <div class="flex">
-   <div style="width: 50%;">Col-3</div>
-   <div style="width: 50%;">Col-4</div>
+   <div style="width: 50%;">col-50</div>
+   <div style="width: 50%;">col-50</div>
   </div>
 
   <div class="flex">
-    <div style="width: 480px;">Col-5</div>
-    <div style="width: 480px;">Col-6</div>
-    <div style="width: 480px;">Col-7</div>
+    <div style="width: 480px;">col-33</div>
+    <div style="width: 480px;">col-33</div>
+    <div style="width: 480px;">col-33</div>
   </div>
 
   <div class="flex">
-     <div style="width: 100%;"><Footer> Footer </Footer></div>
+     <div style="width: 100%;"><Footer>footer: col-100</Footer></div>
   </div>
    
 
