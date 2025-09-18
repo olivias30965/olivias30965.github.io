@@ -1,0 +1,38 @@
+
+
+.active{
+    background-color:rgb(189, 63, 126);
+    text-transform: capitalize;
+}
+
+body{
+    background-color: lightpink;
+   }
+  
+   h1{
+    color:rgb(140, 14, 94)
+   }
+
+   p{
+    color: rgb(163, 8, 76);
+   }
+     
+   a{
+    text-decoration: none;
+   }
+    
+   #primary-nav ul{ 
+    padding-left: 0; 
+   }
+
+   #primary-nav li{ 
+   list-style: none; 
+   display: inline-flex;
+   }
+
+   #primary-nav a{ 
+   display: block; 
+   padding: .5em;
+   } 
+
+   
