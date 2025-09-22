@@ -1,0 +1,21 @@
+/* Main content styles */
+p{
+        margin: 0;
+        padding: 0;
+    }
+   
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    .grid > div {
+      background: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 365px;
+      margin: 10px;
+      flex: 1 1 200px;
+      
+    }

@@ -1,0 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* Footer styles */
+footer {
+    width: auto;
+    height: 130px;
+  background-color: #57C0EC;
+}

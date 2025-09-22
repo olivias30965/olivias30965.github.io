@@ -1,0 +1,29 @@
+/* Header styles */
+
+        header main{
+            width: 1440px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 1em;
+            padding-bottom: 15em;
+        }
+       header div{
+            min-height: 650px;
+            border: 1px solid #0A5D66;
+            background-image: url(placeholder-800x423.gif);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        .equal-columns{
+            display: flex;
+            gap: 1em;
+            margin-bottom: 1em;
+        }
+        .equal-columns:last-child{
+            margin-bottom: 0;
+        }
+        .equal-columns > div{
+            flex-basis: 100%;
+            gap: 1em;
+        }
