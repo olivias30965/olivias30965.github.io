@@ -65,7 +65,7 @@ body a{
       .image-holder {
      
       flex-wrap: wrap;
-      width: 1250px;
+      width: 1300px;
       margin-top:  50px;
       margin-left: 200px;
       margin-bottom: 50px;
@@ -74,9 +74,8 @@ body a{
       }
 
   .image-holder img {
-    
-    height: 100%;
-    width: 1250px;
+      height: 100%;
+      width: 1300px;
     
     
   }

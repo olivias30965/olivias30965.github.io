@@ -1,7 +1,8 @@
 
 footer .footer-left img {
-  height: 24px;
+  height: 35px;
   width: auto;
+  padding-top: 10px;
 }
 footer .footer-left ul {
   display: flex;
@@ -10,12 +11,14 @@ footer .footer-left ul {
   margin: 0;
   padding: 0;
   font-family: 'Afacad', sans-serif;
+  font-size: 25px;
   
 }
 
 footer .footer-left li {
   margin-right: 18px;
   display: inline-block;
+  
 }
 footer .footer-left li:last-child {
   margin-right: 0;
@@ -29,6 +32,7 @@ footer .footer-row {
   padding: 0 40px;
   box-sizing: border-box;
   font-family: 'Afacad', sans-serif;
+  font-size: 18px;
 }
 
 footer .footer-left {
@@ -75,7 +79,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-/* Footer styles */
+
 footer {
     width: auto;
     height: 130px;
