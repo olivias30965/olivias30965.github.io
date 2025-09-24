@@ -1,40 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="p.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/p.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Caprasimo&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      img {
-        width: 100%;
-        height: auto;
-      }
-      .flex {
-        display: flex;
-      }
-      .card-holder {
-        margin: 0 auto;
-        max-width: 1014px;
-        border: 2px dashed red;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-      }
-      .card {
-        width: 500px;
-        border: 1px solid orange;
-      }
-      .card-img {
-        width: 200px;
-      }
-      .card-content {
-        padding: 1rem;
-      }
-    </style>
+ 
   </head>
 
   <body>
@@ -43,29 +19,23 @@
       <header>
         <div class="part1">
           <div class="equal-columns">
-            <div><h1>Visit Central Pennsylvania</h1></div>
+            <div>
+              <h1>Visit Central Pennsylvania</h1>
+              <h2>About Central PA</h2>
+            </div>
+            
           </div>
         </div>
       </header>
 
       <!--below is the body part with the tourist locations-->
 
-      <div class="grid">
-        <div>1</div>
-        <div>2</div>
-      </div>
+     <div class="image-holder">
+       <img src="images/placeholder-800x423.gif" alt="placehold">
+       
 
-      <div class="grid">
-        <div>3</div>
-        <div>4</div>
-      </div>
+     </div>
 
-      <div class="grid">
-        <div>5</div>
-        <div>6</div>
-      </div>
-
-      <!--below is the footer area with the contacts-->
 
       <!-- another approach -->
       <div class="card-holder">
@@ -75,13 +45,29 @@
             <img src="https://placehold.co/300x300" alt="" />
           </div>
           <div class="card-content">
-            <h3>Railroad Museum of Pennsylvania</h3>
+            <h3>Hersheypark</h3>
             <p>
               An impressive architectural gem in Harrisburg showcasing exquisite
               artwork, stunning interiors, and guided tours to learn about the
               state's government and history.
             </p>
-            <a href="https://www.rrmuseumpa.org/">Learn More</a>
+            <a href="https://www.hersheypark.com/">Learn More</a>
+          </div>
+        </div>
+        <!-- /Card -->
+        <!-- Card -->
+        <div class="card flex">
+          <div class="card-img">
+            <img src="https://placehold.co/300x300" alt="" />
+          </div>
+          <div class="card-content">
+            <h3>Pennsylvania State Capitol</h3>
+            <p>
+              An impressive architectural gem in Harrisburg showcasing exquisite
+              artwork, stunning interiors, and guided tours to learn about the
+              state's government and history.
+            </p>
+            <a href="https://www.pacapitol.com/">Learn More</a>
           </div>
         </div>
         <!-- /Card -->
@@ -107,45 +93,73 @@
             <img src="https://placehold.co/300x300" alt="" />
           </div>
           <div class="card-content">
-            <h3>Railroad Museum of Pennsylvania</h3>
+            <h3>The Pennsylvania Grand Canyon</h3>
             <p>
               An impressive architectural gem in Harrisburg showcasing exquisite
               artwork, stunning interiors, and guided tours to learn about the
               state's government and history.
             </p>
-            <a href="https://www.rrmuseumpa.org/">Learn More</a>
+            <a href="https://pacanyon.com/">Learn More</a>
           </div>
         </div>
-        <!-- /Card -->
-        <!-- Card -->
-        <div class="card flex">
+         <div class="card flex">
           <div class="card-img">
             <img src="https://placehold.co/300x300" alt="" />
           </div>
           <div class="card-content">
-            <h3>Railroad Museum of Pennsylvania</h3>
+            <h3>Central Market York</h3>
             <p>
               An impressive architectural gem in Harrisburg showcasing exquisite
               artwork, stunning interiors, and guided tours to learn about the
               state's government and history.
             </p>
-            <a href="https://www.rrmuseumpa.org/">Learn More</a>
+            <a href="https://www.centralmarketyork.com/">Learn More</a>
+          </div>
+        </div>
+
+         <div class="card flex">
+          <div class="card-img">
+            <img src="https://placehold.co/300x300" alt="" />
+          </div>
+          <div class="card-content">
+            <h3>Worlds End State Park</h3>
+            <p>
+              An impressive architectural gem in Harrisburg showcasing exquisite
+              artwork, stunning interiors, and guided tours to learn about the
+              state's government and history.
+            </p>
+            <a href="https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/worlds-end-state-park">Learn More</a>
           </div>
         </div>
         <!-- /Card -->
       </div>
-      <a
-        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced"
-        >Link button style</a
-      >
+      
+
+        
+        
+      
+      <!--below is the footer area with the contacts-->
       <footer>
-        <div class="footer"></div>
-        <div class="equal-columns">
-          <ul>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
+          <div class="footer-row">
+            <div class="footer-left">
+              <ul>
+                <li>Contact Us</li>
+              <li><img src="images/facebook.png" alt=""></li>
+             <li><img src="images/instagram.png" alt=""></li>
+             <li><img src="images/youtube.png" alt=""></li>
+             <li><img src="images/email.png" alt=""></li>
+              </ul>
+            </div>
+            
+            
+            <div class="footer-right">
+              <ul>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+                <li>Copyright © 2025  All Rights Reserved</li>
+              </ul>
+            </div>
+          </div>
       </footer>
     </main>
   </body>

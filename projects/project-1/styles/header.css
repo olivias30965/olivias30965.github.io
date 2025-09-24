@@ -1,0 +1,57 @@
+
+/* Header styles */
+
+
+        header h1{
+            font-family: Julius Sans One, sans-serif;
+            font-weight: 300;
+            color: #0A5D66;
+            font-size: 95px;
+            padding-top: 70px;
+             border: px solid #3a8ca8;   
+             width: 1410px;      
+             height: 80px;            
+              background: rgba(255,255,255,0.8);               
+             display: inline-block;
+        }
+
+         header h2{
+             border: px solid #3a8ca8;   
+             width: 925px;      
+             height: 295px;            
+             background: rgba(255,255,255,0.8);            
+             display: inline-block;        
+        }
+
+        header main{
+            width: 1440px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 1em;
+            padding-bottom: 15em;
+            
+        }
+       header div{
+            min-height: 650px;
+            border: 1px solid #0A5D66;
+            background-image: url(../images/placeholder-800x423.gif);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            
+        }
+        .equal-columns{
+            display: flex;
+            gap: 1em;
+            margin-bottom: 1em;
+        }
+        .equal-columns:last-child{
+            margin-bottom: 0;
+        }
+        .equal-columns > div{
+            flex-basis: 100%;
+            gap: 1em;
+        
+        }
+        
+       

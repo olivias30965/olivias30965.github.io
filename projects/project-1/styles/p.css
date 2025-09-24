@@ -1,0 +1,48 @@
+/* Main content styles */
+
+ img {
+        width: 100%;
+        height: auto;
+      }
+      .flex {
+        display: flex;
+      }
+      .card-holder {
+        margin: 0 auto;
+        max-width: 1440px;
+        border: 2px dashed red;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .card {
+        margin-left: 120px;
+        margin-right: 90px;
+        margin-bottom: 30px;
+        width: 500px;
+        border: 1px solid orange;
+       ;
+      }
+      .card-img {
+        width: 700px;
+        align-content: center;
+      }
+      .card-content {
+        padding: 1rem;
+      }
+
+      .image-holder {
+      flex-wrap: wrap;
+      width: 1440px;
+      margin:  20px;
+      border: 2px dashed blue;
+      height: 200px; /* Set your desired height */
+      overflow: hidden; /* Hide overflow if image is larger */
+      }
+
+  .image-holder img {
+    height: 100%;
+    width: 100% auto;
+    object-fit: cover;
+  }
