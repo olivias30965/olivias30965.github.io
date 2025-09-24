@@ -22,7 +22,7 @@ body a{
   height: 30px;            
   background: #5FC0EC;               
   display: inline-block;
-  box-shadow: 0 px 5px #0006;
+  filter: drop-shadow(4px 3px lightgrey);
 }
  
 .card-img img {
@@ -65,9 +65,9 @@ body a{
       .image-holder {
      
       flex-wrap: wrap;
-      width: 1400px;
+      width: 1250px;
       margin-top:  50px;
-      margin-left: 90px;
+      margin-left: 200px;
       margin-bottom: 50px;
       height: 200px; 
       overflow: hidden; 
@@ -76,7 +76,7 @@ body a{
   .image-holder img {
     
     height: 100%;
-    width: 1400px;
+    width: 1250px;
     
     
   }
