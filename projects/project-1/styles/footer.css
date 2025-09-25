@@ -32,7 +32,7 @@ footer .footer-row {
   padding: 0 40px;
   box-sizing: border-box;
   font-family: 'Afacad', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 footer .footer-left {
@@ -55,6 +55,20 @@ footer .footer-right li {
   display: inline-block;
   
 }
+
+footer .footer-center {
+  text-align: center;
+  font-family: 'Afacad', sans-serif;
+  font-size: 25px;
+  
+}
+
+footer .footer-center li {
+  margin: 0 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+
 footer .equal-columns {
   display: flex;
   align-items: center;
@@ -83,7 +97,7 @@ html, body {
 footer {
     width: auto;
     height: 130px;
-    background-color: #57C0EC;
+    background-color: #12876C;
     text-align: center;
 }
 

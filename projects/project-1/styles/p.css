@@ -4,25 +4,27 @@ body h3{
   font-family: 'Julius Sans One', sans-serif;
   font-size: 25px;
   color: #2F3867;
+
 }
 
 body p{
   font-family: 'Afacad', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   color: black;
+  margin-top: 30px;
   
 }
 
-body a{
+.learnmore a{
   font-family: 'Afacad', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   color: black;
   text-decoration: none;  
-  width: 100px;      
-  height: 30px;            
+  width: 120px;      
+  height: 40px;            
   background: #5FC0EC;               
   display: inline-block;
-  filter: drop-shadow(4px 3px lightgrey);
+  margin-top: 80px;
 }
  
 .card-img img {
@@ -30,11 +32,19 @@ body a{
         height: auto;
         border: solid 4px #0A5D66;
       }
+      .card-img a {
+        display: block;
+      }
+      .card-img a:focus {
+        outline: 3px solid #5FC0EC; 
+        outline-offset: 3px;
+      }
+
       .flex {
         display: flex;
       }
       .card-holder {
-        margin: 0 auto;
+        
         max-width: 1440px;
         display: flex;
         flex-wrap: wrap;
@@ -42,17 +52,19 @@ body a{
         justify-content: center;
       }
       .card {
-        
+        margin-left: 15px;
         margin-bottom: 30px;
-        width: 650px;
-
+        flex: 0 0 calc(50% - 20px); 
+        max-width: 720px; 
+        box-sizing: border-box;
       }
       .card-img {
-        width: 650px;
+        width: 100%; 
         align-content: center;
       }
+
       .card-content {
-        padding: 1.5rem;
+        padding: 20px
       }
 
       .card-content a {
@@ -62,12 +74,21 @@ body a{
         text-align: center;
       }
 
+     
+      .card-content h3 {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin: 0 0 8px 0;
+              text-align: left; 
+            }
+
       .image-holder {
      
       flex-wrap: wrap;
-      width: 1300px;
+      width: 1440px;
       margin-top:  50px;
-      margin-left: 200px;
+      margin-left: 100px;
       margin-bottom: 50px;
       height: 200px; 
       overflow: hidden; 
@@ -75,7 +96,21 @@ body a{
 
   .image-holder img {
       height: 100%;
-      width: 1300px;
+      width: 1400px;
     
     
   }
+
+
+.card-content h3 a {
+  color: inherit;
+  text-decoration: none; 
+  display: inline-block;
+  text-align: left;
+}
+.card-content h3 a:hover,
+.card-content h3 a:focus {
+  text-decoration: none; 
+}
+
+  

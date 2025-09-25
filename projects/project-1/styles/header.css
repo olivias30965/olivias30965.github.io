@@ -34,44 +34,53 @@ header {
     z-index: 1000;
 
 }
-        header h1{
+       header h1{
             font-family: Julius Sans One, sans-serif;
             font-weight: 300;
             color: #0A5D66;
             font-size: 95px;
             padding-top: 0px;
              border: px solid #3a8ca8;
-             width: 1410px;      
-             height: 95px;            
-              background: rgba(255,255,255,0.8);               
-             display: inline-block;
+           width: 1410px;
+           background: rgba(255,255,255,0.8);
+           padding: 5px 24px; 
+           box-sizing: border-box;
+           margin-bottom: 12px; 
+           display: inline-block;
         }
         .about-box {
-            width: 800px; 
+            width: 600px;
             display: inline-block;
-            background: rgba(255,255,255,0.8); 
+            background: rgba(255,255,255,0.8);
             border: white;
             position: relative;
             z-index: 10;
-            margin-bottom: 24px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding: 0px 35px; 
+            color: #12876C;
+           
         }
+
         .about-box h2, .about-box h4 {
             display: block;
-        }      
-
+        }
         .about-box h2 {
-            font-size: 50px;
-            color: #108167;
+            font-size: 45px;
+            color: #0A5D66;
             font-family: Julius Sans One, sans-serif;
             font-weight: 400;
+            margin: 0; 
+            padding-top: 30px;
         }
 
         .about-box h4 {
-            font-size: 30px ;
+            font-size: 30px;
             color: black;
             font-family: Julius Sans One, sans-serif;
             font-weight: 400;
-
+            margin-top: 8px; 
+            padding-top: 35px;
         }
         header main{
             width: 1440px;
