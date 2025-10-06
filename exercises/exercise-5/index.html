@@ -1,90 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/duck.png">
     <title>Exercise 5</title>
-
     <style>
-
-        body{
+        body {
+            font-family: Verdana, Tahoma, sans-serif;
             background-color: rgb(229, 249, 227);
             color: darkgreen;
         }
 
+
         .container {
             display: flex;
-            gap: 20px;           
+            gap: 20px;
             align-items: flex-start;
-            flex-wrap: wrap;    
+            flex-wrap: wrap;
             margin: 20px;
         }
 
-         .container > div {
-            flex: 1 1 300px;     
+        .container>div {
+            flex: 1 1 300px;
         }
 
-        h1{
-            font-family: Verdana, Tahoma, sans-serif;
-            width: 100%; 
+        h1 {
+            width: 100%;
             margin: 0 auto;
-            text-align: center; 
-            background-color: mediumspringgreen; 
+            text-align: center;
+            background-color: mediumspringgreen;
         }
 
-        p, h2{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        p,
+        h2 {
             padding-top: 5px;
         }
 
-     
-        img { 
-            max-width: 100%; 
-            height: auto; 
-            display: block 
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block
         }
 
-           @media screen and (max-width: 800px) {
-            body {
-                background-color: rgb(202, 228, 245);
-                color: rgb(13, 13, 233);
-            }
-           }
+        #primary-nav {
+            background-color: rgb(225, 164, 247);
+        }
 
-           @media screen and (max-width: 800px) {
-            h1 {
-                background-color: rgb(119, 163, 253);
+
+        #primary-nav .inner {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        #primary-nav ul {
+            margin: 0;
+            padding-left: 0;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+
+        #primary-nav li {
+            list-style: none;
+            display: block;
+        }
+
+
+        #primary-nav a {
+            display: inline-block;
+            padding: 0.6rem 1rem;
+            text-decoration: none;
+            background-color: rgb(201, 100, 210);
+            color: inherit;
+            border-radius: 4px;
+        }
+
+
+
+        @media screen and (max-width: 767px) {
+            body {
+                background-color: rgb(246, 176, 219);
+                color: rgb(150, 9, 108);
             }
-           }
-        
+
+            h1 {
+                background-color: rgb(243, 104, 187);
+            }
+
+            #primary-nav {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 0.5s ease-out;
+            }
+
+            #primary-nav li {
+                display: block;
+            }
+
+            body.nav-open #primary-nav {
+                grid-template-rows: 1fr;
+            }
+
+            .inner {
+                overflow: hidden;
+            }
+
+            #toggle-nav-button {
+                display: block;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div >
+    <button id="toggle-nav-button"> Menu</button>
+    <nav id="primary-nav">
+        <div class="inner">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
         <h1>
-            Header
+            All About Ducks
         </h1>
 
     </div>
     <div class="container">
         <div>
-            <h2>Subhead</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus autem ratione blanditiis distinctio! Minima fuga atque voluptatem dignissimos quisquam ducimus, eligendi magni voluptatibus ipsum odio reprehenderit, ullam, ad voluptates. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus culpa quasi asperiores debitis animi, quibusdam iure dignissimos officia commodi nesciunt, recusandae dolor ut aliquid necessitatibus dolores! Sequi architecto tempora iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ad provident beatae quo, esse doloremque fuga pariatur minima necessitatibus blanditiis repellat, architecto odit cum ipsum itaque, quis qui velit accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab in reiciendis facilis possimus. At neque facere facilis recusandae hic, eum nesciunt error enim ducimus minus a expedita dignissimos repellat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tempore id! Dolorum hic velit doloribus? Excepturi omnis minus obcaecati! Voluptate labore, eos assumenda sed illo iusto repellat asperiores odit neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore dolorum magni omnis sunt? Iusto, eum. Pariatur cum ipsa porro corporis vel similique, necessitatibus, numquam culpa molestias perferendis totam consequuntur?</p>
+            <h2>Duck Information</h2>
+            <p>Ducks are birds that belong to the family Anatidae. They are related to swans and geese, which are in the
+                same family. Ducks are usually smaller than swans and geese and have shorter necks. Ducks are water
+                birds with webbed feet for swimming, flat bills for eating, and waterproof feathers to stay warm and
+                dry. They are omnivores, eating plants, seeds, and small insects, and can be found in wetlands all over
+                the world. Male ducks are called drakes and often have colorful feathers, while females are called hens
+                and have plainer feathers for camouflage. Baby ducks are called ducklings, and they are born with a
+                strong instinct to follow their mothers. </p>
         </div>
 
         <div>
-            <h2>Subhead</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam, harum assumenda aliquam consectetur minus rerum nemo quae esse, ea sunt soluta quaerat unde illo natus, ad voluptatum corporis reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci et deleniti, dolores deserunt est tempora voluptate magni sit nulla quod quo fugiat tenetur aspernatur ipsa. Nostrum numquam quae eligendi? </p>
-             <img src="images/ducks.jpg" alt="A mother duck and two ducklings">
+            <h2>Duck Trivia</h2>
+            <p>·No Cold Feet: Ducks' webbed feet lack nerves and blood vessels, allowing them to walk on ice and endure
+                cold water without feeling the chill. </p>
+            <p>·Waterproof Feathers: Their specialized feathers are coated with oil, making them waterproof and keeping
+                the duck buoyant. </p>
+            <p>·Triple Eyelids: Ducks have three eyelids, a feature that helps protect their eyes, particularly
+                underwater, while also allowing them to see in color and have better vision than humans. </p>
+            <p>·Unihemispheric Sleep: Ducks can sleep with one eye open and half of their brain awake, a phenomenon
+                known as "unihemispheric sleep," to remain aware of predators.</p>
+
         </div>
 
         <div>
-            <h2>Subhead</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus autem ratione blanditiis distinctio! Minima fuga atque voluptatem dignissimos quisquam ducimus, eligendi magni voluptatibus ipsum odio reprehenderit, ullam, ad voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta accusantium, sed, culpa quos tenetur animi eaque dolorem similique quia in nam laborum ea eveniet mollitia, numquam incidunt iusto iste? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tempore id! Dolorum hic velit doloribus? Excepturi omnis minus obcaecati! Voluptate labore, eos assumenda sed illo iusto repellat asperiores odit neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore dolorum magni omnis sunt? Iusto, eum. Pariatur cum ipsa porro corporis vel similique, necessitatibus, numquam culpa molestias perferendis totam consequuntur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tempore id! Dolorum hic velit doloribus? Excepturi omnis minus obcaecati! Voluptate labore, eos assumenda sed illo iusto repellat asperiores odit neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore dolorum magni omnis sunt? Iusto, eum. Pariatur cum ipsa porro corporis vel similique, necessitatibus, numquam culpa molestias perferendis totam consequuntur?</p>
-            </div>
-               
-      </div>
+            <h2>Cute Duck Picture</h2>
+            <p>I took this picture of a mama duck and her two little ducklings this summer! •ᴗ•</p>
+            <img src="images/ducks.jpg" alt="A mother duck and two ducklings">
+        </div>
 
-      
+    </div>
+
+    <script>
+        const toggleNavButton = document.getElementById('toggle-nav-button');
+        toggleNavButton.innerHTML = "&#9776;";
+        toggleNavButton.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        toggleNavButton.innerHTML = document.body.classList.contains('nav-open') 
+        ? "&times;"
+        : "&#9776;";
+        });
+
+    </script>
 </body>
+
 </html>
