@@ -15,12 +15,13 @@ body {
     flex: 1;
 }
 
-h2{
+/* Header site title */
+.my-header .site-title a {
     color: white;
     font-size: 30px;
     text-align: left;
     margin: 0;
-    
+    text-decoration: none;
 }
 
 .my-header {
@@ -262,5 +263,12 @@ h2{
     max-width: 35%;
     height: 500px;
     object-fit: contain;
+}
+
+
+.my-header h2 {
+    margin: 0;
+    transform: translateY(-8px); /* moved down slightly */
+    line-height: 1;
 }
 
