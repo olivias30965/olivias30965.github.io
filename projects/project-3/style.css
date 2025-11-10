@@ -8,7 +8,8 @@ body {
     font-family: 'Georgia', serif;
     color: #333;
     line-height: 1.6;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     background: #fff;
 }
@@ -632,7 +633,123 @@ footer {
     font-weight: bold;
 }
 
-/* Mobile Responsive Styles */
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    body {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .store-hours {
+        padding: 50px 60px;
+    }
+
+    .drink-highlight {
+        padding: 60px 60px;
+        gap: 40px;
+    }
+
+    .drink-content {
+        flex: 0 0 300px;
+    }
+
+    .about-section {
+        padding: 60px 60px;
+        gap: 40px;
+    }
+
+    .about-content {
+        max-width: 500px;
+    }
+
+    .about-image {
+        flex: 0 0 300px;
+    }
+
+    .visit-section {
+        padding: 60px 60px;
+        gap: 40px;
+    }
+
+    .map {
+        flex: 0 0 300px;
+    }
+
+    .menu-section {
+        padding: 60px 60px;
+    }
+
+    .events-section {
+        padding: 60px 60px;
+    }
+
+    .about-story-section {
+        padding: 60px 60px;
+    }
+
+    .about-journey-section {
+        padding: 60px 60px;
+        gap: 40px;
+    }
+
+    .about-today-section {
+        padding: 60px 60px;
+    }
+
+    .main-nav {
+        gap: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+    body {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .store-hours {
+        padding: 50px 80px;
+    }
+
+    .drink-highlight {
+        padding: 60px 80px;
+    }
+
+    .about-section {
+        padding: 60px 80px;
+    }
+
+    .visit-section {
+        padding: 60px 80px;
+    }
+
+    .menu-section {
+        padding: 60px 80px;
+    }
+
+    .events-section {
+        padding: 60px 80px;
+    }
+
+    .about-story-section {
+        padding: 60px 80px;
+    }
+
+    .about-journey-section {
+        padding: 60px 80px;
+    }
+
+    .about-today-section {
+        padding: 60px 80px;
+    }
+
+    .main-nav {
+        gap: 250px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
@@ -726,7 +843,7 @@ footer {
         background: rgba(255, 255, 255, 0.1);
     }
 
-    /* Hide desktop navigation on mobile */
+ 
     .main-nav {
         display: none;
     }
@@ -747,7 +864,7 @@ footer {
 
     /* Store Hours Mobile */
     .store-hours {
-        padding: 30px 20px;
+        padding: 30px 10px;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
@@ -778,7 +895,7 @@ footer {
     /* Drink Highlight Mobile */
     .drink-highlight {
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 30px 10px;
         gap: 20px;
     }
 
@@ -815,7 +932,7 @@ footer {
     /* About Section Mobile */
     .about-section {
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 30px 10px;
         gap: 20px;
     }
 
@@ -839,7 +956,7 @@ footer {
     /* Visit Section Mobile */
     .visit-section {
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 30px 10px;
         gap: 20px;
     }
 
@@ -868,7 +985,7 @@ footer {
 
     /* Footer Mobile */
     footer {
-        padding: 20px;
+        padding: 15px 10px;
         flex-direction: column;
         gap: 15px;
     }
@@ -889,7 +1006,7 @@ footer {
 
     /* Menu Pages Mobile */
     .menu-section {
-        padding: 30px 20px;
+        padding: 30px 10px;
     }
 
     .menu-page-title {
@@ -924,7 +1041,7 @@ footer {
 
     /* Events Page Mobile */
     .events-section {
-        padding: 30px 20px;
+        padding: 30px 10px;
     }
 
     .events-title {
@@ -954,7 +1071,7 @@ footer {
 
     /* About Page Mobile */
     .about-story-section {
-        padding: 30px 20px;
+        padding: 30px 10px;
     }
 
     .story-title {
@@ -968,7 +1085,7 @@ footer {
 
     .about-journey-section {
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 30px 10px;
         gap: 20px;
     }
 
@@ -987,7 +1104,7 @@ footer {
     }
 
     .about-today-section {
-        padding: 30px 20px;
+        padding: 30px 10px;
     }
 
     .today-title {
