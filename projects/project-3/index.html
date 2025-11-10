@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brews and Bonds</title>
+    <title>Home - Brews and Bonds</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +15,28 @@
             </a>
         </div>
         <img src="images/homescreen.jpg" alt="Latte art being poured" class="hero-image">
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Mobile Menu Dropdown -->
+        <nav class="mobile-nav">
+            <div class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">Menu ▼</a>
+                <div class="mobile-submenu">
+                    <a href="drinks.html">Drinks</a>
+                    <a href="food.html">Food</a>
+                </div>
+            </div>
+            <a href="events.html" class="mobile-menu-link">Events</a>
+            <a href="about.html" class="mobile-menu-link">About</a>
+        </nav>
+        
+        <!-- Desktop Navigation -->
         <nav class="main-nav">
             <div class="dropdown">
                 <a href="#" class="nav-link">Menu ⏷</a>
@@ -85,7 +107,7 @@
                 </div>
                 <div class="info-item">
                     <p class="info-label">Contact</p>
-                    <p class="info-text">(717) 000-0000<br>brewsandbonds@email.com</p>
+                    <p class="info-text">(717) 000-0000<br>brewsandbonds@fakemail.com</p>
                 </div>
             </div>
             <button onclick="location.href='events.html'" class="btn-tertiary">Store Events →</button>
@@ -104,5 +126,39 @@
         </div>
         <p class="copyright">Copyright © 2025 Brews & Bonds Coffee Shop</p>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const menuItem = document.querySelector('.mobile-menu-item');
+            const submenu = document.querySelector('.mobile-submenu');
+            
+            // Toggle main mobile menu
+            if (menuBtn) {
+                menuBtn.addEventListener('click', function() {
+                    mobileNav.classList.toggle('active');
+                });
+            }
+            
+            // Toggle submenu
+            if (menuItem) {
+                menuItem.querySelector('.mobile-menu-link').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    submenu.classList.toggle('active');
+                });
+            }
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.mobile-menu-btn') && !e.target.closest('.mobile-nav')) {
+                    if (mobileNav) {
+                        mobileNav.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

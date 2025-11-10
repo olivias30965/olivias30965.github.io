@@ -22,8 +22,8 @@ body {
 
 .logo {
     position: absolute;
-    top: 40px;
-    left: 60px;
+    top: 20px;
+    left: 20px;
     z-index: 10;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .logo img {
-    width: 100px;
+    width: 140px;
     height: auto;
     display: block;
 }
@@ -142,6 +142,12 @@ body {
     opacity: 0.8;
 }
 
+/* Hide mobile menu on desktop */
+.mobile-menu-btn,
+.mobile-nav {
+    display: none;
+}
+
 /* Store Hours Section */
 .store-hours {
     padding: 60px 120px;
@@ -149,8 +155,8 @@ body {
 }
 
 .store-hours h2 {
-    font-size: 32px;
-    font-weight: normal;
+    font-size: 40px;
+    font-weight: bold;
     font-family: 'inter';
     color: #6D4F4F;
     margin-bottom: 30px;
@@ -204,43 +210,53 @@ body {
 .drink-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .drink-info {
     flex: 1;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .highlight-label {
-    font-size: 14px;
-    color: #666;
+    text-align: center;
+    font-family: 'inter';
+    font-size: 22px;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .drink-title {
+    text-align: center;
+    font-family: 'inter';
     font-size: 48px;
     font-weight: bold;
-    color: #333;
+    color: #6D4F4F;
     margin-bottom: 25px;
 }
 
 .drink-description {
+    text-align: center;
+    font-family: 'inter';
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.8;
     margin-bottom: 20px;
 }
 
 .drink-cta {
+    text-align: center;
+    font-family: 'inter';
     font-size: 16px;
-    color: #333;
+    color: #000000;
     margin-bottom: 25px;
-    font-weight: 500;
 }
 
 /* About Section */
 .about-section {
+    text-align: center;
     display: flex;
     padding: 80px 120px;
     background: #fff;
@@ -254,22 +270,23 @@ body {
 }
 
 .about-content h2 {
+    font-family: 'inter';
     font-size: 36px;
     font-weight: bold;
-    color: #333;
+    color: #6D4F4F;
     margin-bottom: 25px;
 }
 
 .about-text {
+    font-family: 'inter';
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.8;
     margin-bottom: 30px;
 }
 
 .about-image {
     flex: 0 0 400px;
-    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -294,8 +311,9 @@ body {
 }
 
 .visit-content h2 {
+    font-family: 'inter';
+    font-weight: bold;
     font-size: 40px;
-    font-weight: normal;
     margin-bottom: 40px;
 }
 
@@ -308,12 +326,14 @@ body {
 }
 
 .info-label {
+    font-family: 'inter';
     font-size: 14px;
     color: #ddd;
     margin-bottom: 8px;
 }
 
 .info-text {
+    font-family: 'inter';
     font-size: 18px;
     color: white;
     line-height: 1.6;
@@ -322,7 +342,6 @@ body {
 .map {
     position: relative;
     flex: 0 0 400px;
-    border-radius: 8px;
     overflow: hidden;
     height: 300px;
 }
@@ -359,11 +378,10 @@ body {
 /* Buttons */
 .btn-secondary {
     background: #c8a882;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 14px 28px;
-    border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -373,12 +391,11 @@ body {
 }
 
 .btn-tertiary {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
+    background: #c8a882;
+    color: rgb(0, 0, 0);
+    border: 1px solid #c8a882;
     padding: 14px 28px;
-    border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -424,16 +441,18 @@ footer {
 }
 
 .story-title {
-    font-size: 32px;
+    font-family: 'inter';
+    font-size: 45px;
     font-weight: normal;
     font-style: italic;
-    color: #666;
+    color: #6D4F4F;
     margin-bottom: 30px;
 }
 
 .story-text {
+    font-family: 'inter';
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.8;
     max-width: 1200px;
 }
@@ -461,15 +480,18 @@ footer {
 }
 
 .journey-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
+    font-family: 'inter';
+    font-size: 45px;
+    font-style: italic;
+    font-weight: normal;
+    color: #6D4F4F;
     margin-bottom: 25px;
 }
 
 .journey-text {
+    font-family: 'inter';
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.8;
 }
 
@@ -479,16 +501,18 @@ footer {
 }
 
 .today-title {
-    font-size: 32px;
+    font-family: 'inter';
+    font-size: 45px;
     font-weight: normal;
     font-style: italic;
-    color: #666;
+    color: #6D4F4F;
     margin-bottom: 30px;
 }
 
 .today-text {
+    font-family: 'inter';
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.8;
     max-width: 1200px;
 }
@@ -500,10 +524,11 @@ footer {
 }
 
 .menu-page-title {
-    font-size: 48px;
+    font-family: 'inter';
+    font-size: 65px;
     font-weight: normal;
     font-style: italic;
-    color: #666;
+    color: #6D4F4F;
     margin-bottom: 60px;
 }
 
@@ -512,9 +537,10 @@ footer {
 }
 
 .category-title {
+    font-family: 'inter';
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     margin-bottom: 25px;
 }
 
@@ -532,14 +558,16 @@ footer {
 }
 
 .item-name {
+    font-family: 'inter';
     font-size: 16px;
-    color: #333;
+    color: #000000;
     flex: 1;
 }
 
 .item-price {
+    font-family: 'inter';
     font-size: 16px;
-    color: #333;
+    color: #000000;
     font-weight: 500;
     margin-left: 20px;
 }
@@ -577,7 +605,7 @@ footer {
     font-size: 24px;
     font-weight: 500;
     font-style: italic;
-    color: #333;
+    color: #000000;
     margin-bottom: 15px;
 }
 
@@ -589,7 +617,7 @@ footer {
 .event-list li {
     font-family: 'inter';
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.8;
     margin-bottom: 12px;
     padding-left: 20px;
@@ -602,4 +630,382 @@ footer {
     left: 0;
     color: #333;
     font-weight: bold;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        max-width: 375px;
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 20;
+        background: rgba(93, 78, 74, 0.8);
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .mobile-menu-btn span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        transition: 0.3s;
+    }
+
+    .mobile-menu-btn:hover {
+        background: rgba(93, 78, 74, 1);
+    }
+
+    /* Mobile Navigation */
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(93, 78, 74, 0.95);
+        border-radius: 4px;
+        padding: 10px 0;
+        min-width: 150px;
+        z-index: 15;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+
+    .mobile-menu-item {
+        position: relative;
+    }
+
+    .mobile-menu-link {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: 'inter';
+        font-size: 16px;
+        padding: 12px 20px;
+        transition: background 0.3s;
+    }
+
+    .mobile-menu-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-submenu {
+        display: none;
+        background: rgba(73, 58, 54, 0.95);
+        padding-left: 20px;
+    }
+
+    .mobile-submenu.active {
+        display: block;
+    }
+
+    .mobile-submenu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: 'inter';
+        font-size: 14px;
+        padding: 10px 20px;
+        transition: background 0.3s;
+    }
+
+    .mobile-submenu a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Hide desktop navigation on mobile */
+    .main-nav {
+        display: none;
+    }
+
+    /* Hero Section Mobile */
+    .hero {
+        height: 250px;
+    }
+
+    .logo {
+        top: 15px;
+        left: 15px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    /* Store Hours Mobile */
+    .store-hours {
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .store-hours h2 {
+        font-size: 24px;
+    }
+
+    .hours-container {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .divider {
+        width: 40px;
+    }
+
+    .days {
+        font-size: 12px;
+    }
+
+    .time {
+        font-size: 14px;
+    }
+
+    /* Drink Highlight Mobile */
+    .drink-highlight {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .drink-content {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .drink-info {
+        max-width: 100%;
+    }
+
+    .highlight-label {
+        font-size: 12px;
+    }
+
+    .drink-title {
+        font-size: 32px;
+    }
+
+    .drink-description {
+        font-size: 14px;
+    }
+
+    .drink-cta {
+        font-size: 14px;
+    }
+
+    .btn-secondary {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    /* About Section Mobile */
+    .about-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-image {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    /* Visit Section Mobile */
+    .visit-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .visit-content h2 {
+        font-size: 28px;
+    }
+
+    .info-label {
+        font-size: 12px;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+
+    .btn-tertiary {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .map {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Footer Mobile */
+    footer {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /* Menu Pages Mobile */
+    .menu-section {
+        padding: 30px 20px;
+    }
+
+    .menu-page-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .menu-category {
+        margin-bottom: 40px;
+    }
+
+    .category-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu-items {
+        gap: 10px;
+    }
+
+    .menu-item {
+        padding: 6px 0;
+    }
+
+    .item-name {
+        font-size: 14px;
+    }
+
+    .item-price {
+        font-size: 14px;
+    }
+
+    /* Events Page Mobile */
+    .events-section {
+        padding: 30px 20px;
+    }
+
+    .events-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .events-intro {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .event-day {
+        margin-bottom: 30px;
+    }
+
+    .day-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .event-list li {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    /* About Page Mobile */
+    .about-story-section {
+        padding: 30px 20px;
+    }
+
+    .story-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .story-text {
+        font-size: 14px;
+    }
+
+    .about-journey-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .journey-image {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .journey-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .journey-text {
+        font-size: 14px;
+    }
+
+    .about-today-section {
+        padding: 30px 20px;
+    }
+
+    .today-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .today-text {
+        font-size: 14px;
+    }
+
+    /* Dropdown Mobile */
+    .dropdown-content {
+        min-width: 150px;
+    }
+
+    .dropdown-content a {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
 }
