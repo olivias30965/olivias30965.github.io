@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    line-height: 1.6;
+    width: 1440px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    z-index: 10;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-nav {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    z-index: 10;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .nav-link {
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown .nav-link::after {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    padding-top: 5px;
+}
+
+.dropdown::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: transparent;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 16px 24px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: 'inter';
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content a:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-content a:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-link {
+    font-family: 'inter';
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Store Hours Section */
+.store-hours {
+    padding: 60px 120px;
+    background: #fff;
+}
+
+.store-hours h2 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'inter';
+    color: #6D4F4F;
+    margin-bottom: 30px;
+}
+
+.hours-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 500px;
+}
+
+.hours-column {
+    flex: 0 0 auto;
+}
+
+.days {
+    font-family: 'inter';
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: #333;
+}
+
+/* Drink Highlight Section */
+.drink-highlight {
+    display: flex;
+    padding: 80px 120px;
+    background: #f9f9f9;
+    gap: 60px;
+    align-items: center;
+}
+
+.drink-content {
+    flex: 0 0 400px;
+}
+
+.drink-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.drink-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.highlight-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.drink-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.drink-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.drink-cta {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    padding: 80px 120px;
+    background: #fff;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    flex: 0 0 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Visit Section */
+.visit-section {
+    background: #5d4e4a;
+    color: white;
+    padding: 80px 120px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.visit-content {
+    flex: 1;
+}
+
+.visit-content h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.visit-info {
+    margin-bottom: 40px;
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.info-label {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+.info-text {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+}
+
+.map {
+    position: relative;
+    flex: 0 0 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-pin {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    width: 30px;
+    height: 30px;
+    background: #d9534f;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg) translate(100%, 100%);
+}
+
+.map-pin::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Buttons */
+.btn-secondary {
+    background: #c8a882;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #b39770;
+}
+
+.btn-tertiary {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-tertiary:hover {
+    background: white;
+    color: #5d4e4a;
+}
+
+/* Footer */
+footer {
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+}
+
+.copyright {
+    font-family: 'inter';
+    font-size: 12px;
+    color: #999;
+}
+
+/* About Page Styles */
+.about-story-section {
+    padding: 80px 120px;
+    background: #fff;
+}
+
+.story-title {
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.story-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    max-width: 1200px;
+}
+
+.about-journey-section {
+    display: flex;
+    padding: 80px 120px;
+    background: #f9f9f9;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.journey-image {
+    flex: 0 0 300px;
+}
+
+.journey-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.journey-content {
+    flex: 1;
+}
+
+.journey-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.journey-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-today-section {
+    padding: 80px 120px;
+    background: #fff;
+}
+
+.today-title {
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.today-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    max-width: 1200px;
+}
+
+/* Food and Drinks Menu Pages */
+.menu-section {
+    padding: 80px 120px;
+    background: #fff;
+}
+
+.menu-page-title {
+    font-size: 48px;
+    font-weight: normal;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.menu-category {
+    margin-bottom: 60px;
+}
+
+.category-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 0;
+}
+
+.item-name {
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+/* Events Page */
+.events-section {
+    padding: 80px 120px;
+    background: #fff;
+}
+
+.events-title {
+    font-size: 48px;
+    font-weight: lighter;
+    font-family: 'inter';
+    font-style: italic;
+    color: #6D4F4F;
+    margin-bottom: 30px;
+}
+
+.events-intro {
+    font-family: 'inter';
+    font-size: 16px;
+    color: #a5a4a4;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 1200px;
+}
+
+.event-day {
+    margin-bottom: 40px;
+}
+
+.day-title {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.event-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.event-list li {
+    font-family: 'inter';
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.event-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-weight: bold;
+}
