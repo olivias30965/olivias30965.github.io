@@ -33,7 +33,7 @@ body {
 }
 
 .logo img {
-    width: 140px;
+    width: 200px;
     height: auto;
     display: block;
 }
@@ -859,7 +859,7 @@ footer {
     }
 
     .logo img {
-        width: 80px;
+        width: 120px;
     }
 
     /* Store Hours Mobile */
