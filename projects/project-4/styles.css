@@ -1,0 +1,572 @@
+:root {
+    --bg: #F5EDF0;
+    --teal: #0db3a7;
+    --accent: #484696;
+    --muted: #6c6c6c;
+}
+.chau-philomene-one-regular {
+  font-family: "Chau Philomene One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+ font-family: "corbel", sans-serif;
+    font-size: 17px;
+    margin: 0;
+    background: var(--bg);
+    color: #222;
+}
+
+/* Header & Navigation */
+.site-header {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: visible;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(254, 239, 244, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    z-index: 10;
+}
+
+.hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.logo-center {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.logo-center img {
+    height: 100px;
+    object-fit: contain;
+    width: auto;
+}
+
+.top-actions {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+
+.topbar {
+    display: none;
+}
+
+.top-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border: none;
+    background: #484696;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn.ticket {
+    background: #484696;
+}
+
+.btn:hover {
+    background: #B81472;
+}
+
+.main-nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    z-index: 100;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #3f3b85;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    min-width: 200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    z-index: 20;
+    transition: opacity 0.2s ease;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    list-style: none;
+}
+
+.dropdown-menu a {
+    width: 100%;
+    display: block;
+    padding: 10px 16px;
+    background: transparent;
+    border-radius: 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #B81472;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:not(:hover) .dropdown-menu {
+    display: none !important;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #484696;
+    transition: background 0.3s ease;
+    font-size: 18px;
+}
+
+.main-nav a:hover {
+    background: #B81472;
+}
+
+.dropdown-arrow {
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+}
+
+/* Container & Content */
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.intro p {
+    margin-left: 70px;
+    text-align: center;
+    max-width: 770px;
+    color: #555;
+    font-size: 20px;
+     font-family: "corbel", sans-serif;
+    line-height: 1.5;
+}
+
+/* Section Titles with Decorations */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.section-title h2 {
+    
+    margin: 0;
+    font-family: "Chau Philomene One", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+.decor-dots {
+    color: var(--teal);
+    font-weight: 900;
+    letter-spacing: 0.7rem;
+    font-size: 1.8rem;
+}
+
+/* Current Exhibitions */
+.current-exhibitions {
+    margin-top: 2rem;
+}
+
+.exhibits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.exhibit {
+    background: white;
+    padding: 0;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.exhibit img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    flex-shrink: 0;
+}
+
+.exhibit-content {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exhibit-content h3 {
+    margin: 0;
+    color: black;
+    font-family: "corbel", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.exhibit-content p {
+    margin: 0.4rem 0 0.8rem 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.exhibit .btn {
+    background: #484696;
+    font-family: "corbel", sans-serif;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-size: 0.9rem;
+    margin-top: 0;
+    transition: background 0.3s ease;
+    
+}
+
+.exhibit .btn:hover {
+    background: #B81472;
+}
+
+/* Decorative Line */
+.decor-line {
+    display: none;
+}
+
+/* Amenities */
+.amenities {
+    margin-top: 2.25rem;
+    float: right;
+    width: 35%;
+    margin-left: 2rem;
+}
+
+.amenities h2 {
+    color:var(--teal);
+}
+
+.amenities ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.amenities li {
+    padding-left: 1rem;
+    position: relative;
+    color: #333;
+}
+
+
+
+/* Support Us */
+.support-us {
+    margin-top: 2rem;
+    clear: both;
+}
+
+.support-us h2 {
+    color: var(--teal);
+     font-family: "Chau Philomene One", sans-serif;
+     font-size: 40px;
+    
+}
+
+.support-content {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 1rem;
+    align-items: center;
+}
+
+.support-text p {
+    margin-top: 0;
+     font-family: "corbel", sans-serif;
+}
+
+.support-text ul {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.support-text li {
+    color: #333;
+    font-size: 17px;
+    font-family: "corbel", sans-serif;
+}
+
+.support-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 2.5rem;
+    background: #484696;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto 1.5rem;
+}
+
+.footer-section h4 {
+    margin: 0 0 0.8rem 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border-radius: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    text-align: right;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .exhibits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-content {
+        grid-template-columns: 1fr;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 48px;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .main-nav ul {
+        padding-left: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Admissions Page */
+.admissions-content {
+    padding: 2rem 1rem;
+}
+
+.admissions-content .section-title h2 {
+    font-size: 56px;
+}
+
+.admissions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.admissions-text p {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    margin-bottom: 180px;
+}
+
+
+.admissions-text h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.ticket-prices {
+    list-style: none;
+    padding: 0;
+}
+
+.ticket-prices li {
+    padding: 0.5rem 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.ticket-prices li:before {
+    content: "• ";
+    color: #0db3a7;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.admissions-image {
+    text-align: center;
+    margin-top: 300px;
+}
+
+.admissions-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .admissions-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gni0cgx.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Permanent Collection - Aurora Art Museum</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="hero">
+            <img src="images/hero.jpg" alt="museum architecture">
+            <div class="hero-overlay">
+                <div class="hero-top">
+                    <div class="logo-center">
+                        <a href="index.html"><img src="images/auroralogo.png" alt="Aurora Art Museum logo"></a>
+                    </div>
+                    <div class="top-actions">
+                        <a class="btn ticket" href="admissions.html">Get Tickets</a>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" onclick="event.preventDefault();">Exhibits <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="upcoming_exhibits.html">Upcoming Exhibits</a></li>
+                                <li><a href="past_highlights.html">Past Highlights</a></li>
+                                <li><a href="permanent_collection.html">Permanent Collection</a></li>
+                                <li><a href="current_exhibitions.html">Current Exhibitions</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="membership.html">Memberships</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>Aurora Art Museum<br>123 Main Street<br>Harrisburg, Pa 17110</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Tuesday – Friday: 10am – 6pm<br>Saturday: 10am – 8pm<br>Sunday: 12pm – 5pm<br>Closed Mondays & Major Holidays</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>General Inquiries<br>info@auroraartmuseum.test</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Aurora Art Museum © Copyright 2025</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.dropdown-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.dropdown').style.pointerEvents = 'none';
+                setTimeout(() => {
+                    document.querySelector('.dropdown').style.pointerEvents = 'auto';
+                }, 100);
+            });
+        });
+    </script>
 </body>
 </html>
