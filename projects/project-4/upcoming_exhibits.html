@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/gni0cgx.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming Exhibits - Aurora Art Museum</title>
@@ -22,8 +23,13 @@
                     <div class="top-actions">
                         <a class="btn ticket" href="admissions.html">Get Tickets</a>
                     </div>
+                    <button class="hamburger" id="hamburgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <nav class="main-nav">
+                <nav class="main-nav" id="mainNav">
                     <ul>
                         <li class="dropdown">
                             <a href="#" onclick="event.preventDefault();">Exhibits <span class="dropdown-arrow">▼</span></a>
@@ -43,6 +49,29 @@
             </div>
         </div>
     </header>
+    
+    <main class="container">
+        <section class="upcoming-content">
+            <div class="upcoming-header">
+                <h2>Upcoming Exhibitions</h2>
+                <span class="decor-dots">•••</span>
+            </div>
+            
+            <div class="upcoming-grid">
+                <div class="upcoming-item">
+                    <img src="images/upcomingimages1.png" alt="Threads of Memory exhibition">
+                    <h3>Threads of Memory –</h3>
+                    <p>A textile-based exploration of heritage and storytelling featuring traditional crafts</p>
+                </div>
+                
+                <div class="upcoming-item">
+                    <img src="images/upcomingimages2.png" alt="The Digital Canvas exhibition">
+                    <h3>The Digital Canvas –</h3>
+                    <p>Examining the intersection of art and technology in contemporary practice</p>
+                </div>
+            </div>
+        </section>
+    </main>
     
     <footer class="site-footer">
         <div class="footer-grid">
@@ -70,6 +99,16 @@
         </div>
     </footer>
     <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        if (hamburgerBtn) {
+            hamburgerBtn.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                hamburgerBtn.classList.toggle('active');
+            });
+        }
+
         document.querySelectorAll('.dropdown-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.dropdown').style.pointerEvents = 'none';

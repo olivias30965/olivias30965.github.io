@@ -16,7 +16,7 @@
 
 body {
  font-family: "corbel", sans-serif;
-    font-size: 17px;
+    font-size: 21px;
     margin: 0;
     background: var(--bg);
     color: #222;
@@ -89,6 +89,10 @@ body {
     display: none;
 }
 
+.hamburger {
+    display: none;
+}
+
 .top-actions {
     display: flex;
     gap: 1rem;
@@ -136,6 +140,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+    
+    .main-nav a {
+        width: 100%;
+        justify-content: center;
+    }
 
 .dropdown {
     position: relative;
@@ -149,7 +158,6 @@ body {
     left: 0;
     background: #3f3b85;
     padding: 0.5rem 0;
-    border-radius: 4px;
     min-width: 200px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
     z-index: 20;
@@ -172,6 +180,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     transition: background 0.3s ease;
+    text-align: center;
 }
 
 .dropdown-menu a:hover {
@@ -224,7 +233,13 @@ body {
     font-size: 20px;
      font-family: "corbel", sans-serif;
     line-height: 1.5;
+    margin-bottom: 50px;
 }
+    
+    .dropdown-menu {
+        width: 100%;
+        box-sizing: border-box;
+    }
 
 /* Section Titles with Decorations */
 .section-title {
@@ -239,16 +254,18 @@ body {
     
     margin: 0;
     font-family: "Chau Philomene One", sans-serif;
-    font-size: 40px;
+    font-size: 56px;
     font-weight: 700;
     color: var(--teal);
+    margin-bottom: 60px;
 }
 
 .decor-dots {
     color: var(--teal);
     font-weight: 900;
-    letter-spacing: 0.7rem;
-    font-size: 1.8rem;
+    letter-spacing: 40px;
+    font-size: 40px;
+    margin-bottom: 60px;
 }
 
 /* Current Exhibitions */
@@ -297,14 +314,14 @@ body {
     margin: 0;
     color: black;
     font-family: "corbel", sans-serif;
-    font-size: 1.1rem;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .exhibit-content p {
     margin: 0.4rem 0 0.8rem 0;
     color: var(--muted);
-    font-size: 0.95rem;
+    font-size: 16px;
 }
 
 .exhibit .btn {
@@ -366,7 +383,7 @@ body {
 .support-us h2 {
     color: var(--teal);
      font-family: "Chau Philomene One", sans-serif;
-     font-size: 40px;
+     font-size: 56px;
     
 }
 
@@ -393,7 +410,7 @@ body {
 
 .support-text li {
     color: #333;
-    font-size: 17px;
+    font-size: 21px;
     font-family: "corbel", sans-serif;
 }
 
@@ -502,13 +519,145 @@ body {
     }
 }
 
+/* Events Page */
+.events-content {
+    padding: 2rem 1rem 3rem;
+}
+
+.events-subtitle {
+    font-size: 35px;
+    color: #777;
+    margin: 0 0 2rem;
+    margin-bottom: 90px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.event-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.event-card img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.event-card h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.event-card p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Education Page */
+.education-content {
+    padding: 2rem 1rem 3rem;
+}
+
+.education-subtitle {
+    font-size: 35px;
+    color: #555;
+    margin: 0 0 2.5rem;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.education-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.education-text h3 {
+    margin: 0 0 0.75rem;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.education-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+    font-size: 18px;
+    color: #333;
+}
+
+.education-text ul li {
+    position: relative;
+    padding-left: 14px;
+}
+
+.education-text ul li::before {
+    content: "•";
+    color: #0db3a7;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.education-image img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    .education-block {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .education-image img {
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
 /* Admissions Page */
 .admissions-content {
     padding: 2rem 1rem;
 }
 
 .admissions-content .section-title h2 {
-    font-size: 56px;
+    margin-bottom: 30px;
+}
+
+.admissions-content .decor-dots {
+    margin-bottom: 30px;
 }
 
 .admissions-grid {
@@ -521,17 +670,16 @@ body {
 
 .admissions-text p {
     font-size: 40px;
-    color: #333;
+    color: #777;
     margin-bottom: 2rem;
     line-height: 1.6;
-    margin-bottom: 180px;
+    margin-bottom: 100px;
 }
 
 
 .admissions-text h3 {
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 1rem;
     color: #333;
 }
 
@@ -555,7 +703,7 @@ body {
 
 .admissions-image {
     text-align: center;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .admissions-image img {
@@ -564,9 +712,463 @@ body {
     border-radius: 8px;
 }
 
+/* Membership Page */
+.membership-content {
+    padding: 2rem 1rem;
+}
+
+.membership-content .section-title h2 {
+    margin-bottom: 30px;
+}
+
+.membership-content .decor-dots {
+    margin-bottom: 30px;
+}
+
+.membership-subtitle {
+    font-size: 35px;
+    color: #777;
+    margin: 2rem 0 3rem;
+    line-height: 1.4;
+    margin-bottom: 100px;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.membership-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.membership-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.membership-list li {
+    font-size: 18px;
+    color: #333;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.membership-list li::before {
+    content: "•";
+    color: #0db3a7;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* About Page */
+.about-content {
+    padding: 2rem 1rem;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-header h2 {
+    margin: 0;
+    font-family: "Chau Philomene One", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+.about-header .decor-dots {
+    color: var(--teal);
+    font-weight: 900;
+    letter-spacing: 40px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-section {
+    margin-bottom: 3.5rem;
+}
+
+.about-section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 1.5rem;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* Upcoming Exhibits Page */
+.upcoming-content {
+    padding: 2rem 1rem;
+}
+
+.upcoming-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.upcoming-header h2 {
+    margin: 0;
+    font-family: "Chau Philomene One", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+.upcoming-header .decor-dots {
+    color: var(--teal);
+    font-weight: 900;
+    letter-spacing: 40px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.upcoming-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.upcoming-item img {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.upcoming-item h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.upcoming-item p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
 @media (max-width: 900px) {
+    .about-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+
     .admissions-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+}
+
+@media (max-width: 780px) {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        width: 24px;
+        height: 20px;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+    }
+
+    .hamburger span {
+        width: 24px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(9px, 9px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 220px;
+        left: 0;
+        right: 0;
+        background: #484696;
+        padding: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        width: 100%;
+        align-items: stretch;
+        margin: 0;
+        list-style: none;
+    }
+
+    .main-nav li {
+        width: 100%;
+        display: block;
+        list-style: none;
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 16px;
+        border-radius: 0;
+        background: transparent;
+        display: block;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+
+    .main-nav a:hover {
+        background: #B81472;
+    }
+
+    .top-actions {
+        display: none;
+    }
+
+    .logo-center img {
+        height: 70px;
+    }
+
+    .btn,
+    .main-nav a {
+        padding: 8px 14px;
+        font-size: 14px;
+        border-radius: 18px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background: #3f3b85;
+        display: block;
+        max-height: 500px;
+        overflow: visible;
+    }
+
+    .dropdown-menu li {
+        list-style: none;
+        width: 100%;
+    }
+
+    .dropdown-menu a {
+        padding: 8px 32px;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+        background: #B81472;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .main-nav .dropdown-menu {
+        display: block !important;
+    }
+
+    .container {
+        max-width: 320px;
+        margin: 1rem auto;
+        padding: 0 0.75rem;
+        width: 100%;
+    }
+
+    .intro p {
+        margin-left: 0 !important;
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .section-title {
+        gap: 0.4rem;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .decor-dots {
+        font-size: 16px;
+        letter-spacing: 6px;
+        margin-bottom: 12px;
+    }
+
+    .exhibits-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .exhibit img {
+        width: 140px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .exhibit-content h3 {
+        font-size: 16px;
+        margin: 0.25rem 0;
+    }
+
+    .exhibit-content p {
+        font-size: 13px;
+        margin: 0.25rem 0 0.5rem;
+    }
+
+    .btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .amenities ul li,
+    .support-text ul li {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .amenities {
+        float: none;
+        width: 100%;
+        margin: 1.5rem 0 0;
+    }
+
+    .support-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .support-image img {
+        width: 160px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 0.4rem;
+    }
+
+    .footer-section p,
+    .footer-bottom p {
+        font-size: 12px;
+        margin: 0;
     }
 }

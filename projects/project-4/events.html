@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/gni0cgx.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - Aurora Art Museum</title>
@@ -22,16 +23,23 @@
                     <div class="top-actions">
                         <a class="btn ticket" href="admissions.html">Get Tickets</a>
                     </div>
+                    <button class="hamburger" id="hamburgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <nav class="main-nav">
+                <nav class="main-nav" id="mainNav">
                     <ul>
                         <li class="dropdown">
                             <a href="#" onclick="event.preventDefault();">Exhibits <span class="dropdown-arrow">▼</span></a>
                             <ul class="dropdown-menu">
+                                          <li><a href="permanent_collection.html">Permanent Collection</a></li>
+                                <li><a href="lightandshadow.html">Light & Shadow</a></li>
+                                <li><a href="localvisions.html">Local Visions</a></li>
                                 <li><a href="upcoming_exhibits.html">Upcoming Exhibits</a></li>
                                 <li><a href="past_highlights.html">Past Highlights</a></li>
-                                <li><a href="permanent_collection.html">Permanent Collection</a></li>
-                                <li><a href="current_exhibitions.html">Current Exhibitions</a></li>
+                                
                             </ul>
                         </li>
                         <li><a href="events.html">Events</a></li>
@@ -43,7 +51,39 @@
             </div>
         </div>
     </header>
-    
+    <main class="container events-content">
+        <section>
+            <div class="section-title">
+                <h2>Museum Events</h2>
+                <span class="decor-dots">••••</span>
+            </div>
+            <p class="events-subtitle">Our events bring the museum to life</p>
+
+            <div class="events-grid">
+                <div class="event-card">
+                    <img src="images/eventsimage1.png" alt="Outdoor evening festival">
+                    <h3>First Fridays:</h3>
+                    <p>Late-night gallery hours, live performances, and food trucks.</p>
+                </div>
+                <div class="event-card">
+                    <img src="images/eventsimage2.png" alt="Artist talk in gallery">
+                    <h3>Artist Talks:</h3>
+                    <p>Meet the creators behind the work, every second Saturday.</p>
+                </div>
+                <div class="event-card">
+                    <img src="images/eventsimage3.png" alt="Family art workshop">
+                    <h3>Family Sundays:</h3>
+                    <p>Interactive workshops designed for children and parents alike.</p>
+                </div>
+                <div class="event-card">
+                    <img src="images/eventsimage4.png" alt="Film screening in gallery">
+                    <h3>Film Nights:</h3>
+                    <p>Screenings of art documentaries and experimental films.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="site-footer">
         <div class="footer-grid">
             <div class="footer-section">
@@ -70,6 +110,16 @@
         </div>
     </footer>
     <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        if (hamburgerBtn) {
+            hamburgerBtn.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                hamburgerBtn.classList.toggle('active');
+            });
+        }
+
         document.querySelectorAll('.dropdown-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.dropdown').style.pointerEvents = 'none';

@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/gni0cgx.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Aurora Art Museum</title>
@@ -22,16 +23,23 @@
                     <div class="top-actions">
                         <a class="btn ticket" href="admissions.html">Get Tickets</a>
                     </div>
+                    <button class="hamburger" id="hamburgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <nav class="main-nav">
+                <nav class="main-nav" id="mainNav">
                     <ul>
                         <li class="dropdown">
                             <a href="#" onclick="event.preventDefault();">Exhibits <span class="dropdown-arrow">▼</span></a>
                             <ul class="dropdown-menu">
+                                           <li><a href="permanent_collection.html">Permanent Collection</a></li>
+                                <li><a href="lightandshadow.html">Light & Shadow</a></li>
+                                <li><a href="localvisions.html">Local Visions</a></li>
                                 <li><a href="upcoming_exhibits.html">Upcoming Exhibits</a></li>
                                 <li><a href="past_highlights.html">Past Highlights</a></li>
-                                <li><a href="permanent_collection.html">Permanent Collection</a></li>
-                                <li><a href="current_exhibitions.html">Current Exhibitions</a></li>
+                                
                             </ul>
                         </li>
                         <li><a href="events.html">Events</a></li>
@@ -43,6 +51,44 @@
             </div>
         </div>
     </header>
+    
+    <main class="container">
+        <section class="about-content">
+            <div class="about-header">
+                <h2>About the Museum</h2>
+                <span class="decor-dots">•••</span>
+            </div>
+            
+            <div class="about-intro">
+                <div class="about-text">
+                    <p>Welcome to the Aurora Art Museum, a contemporary cultural hub dedicated to celebrating creativity, fostering dialogue, and connecting communities through the power of art. Founded in 1998, the museum has grown into one of the region's most dynamic art spaces, offering a balance of local innovation and global perspectives.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/aboutimage1.png" alt="Museum building exterior">
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h3>Our Mission</h3>
+                <p>We believe art has the power to illuminate, challenge, and inspire. Our mission is to engage, educate, and empower our visitors through thoughtfully curated exhibitions and programs that celebrate artistic excellence and foster meaningful conversations about art, culture, and society.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>What We Showcase</h3>
+                <p>Our galleries feature an ever-rotating selection of contemporary works by artists, installations, sculpture, photography, and mixed media. From emerging local talent to established international names, our permanent collection featuring over 1,200 works, every exhibition tells a unique story.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>Our Community</h3>
+                <p>The museum is more than a gallery—it's a gathering place. Through educational programs, artist talks, family workshops, and community partnerships, we strive to make art accessible to everyone. Whether you're a seasoned collector or visiting for the first time, the Aurora Art Museum is welcoming to all.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>A Place to Explore</h3>
+                <p>Located in the heart of downtown, the museum's light-filled galleries, sculpture courtyard, and intimate spaces invite visitors to wander, discover, and connect with art and each other. Whether you spend an hour or a full afternoon, there's always something new to explore.</p>
+            </div>
+        </section>
+    </main>
     
     <footer class="site-footer">
         <div class="footer-grid">
@@ -70,6 +116,16 @@
         </div>
     </footer>
     <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        if (hamburgerBtn) {
+            hamburgerBtn.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                hamburgerBtn.classList.toggle('active');
+            });
+        }
+
         document.querySelectorAll('.dropdown-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.dropdown').style.pointerEvents = 'none';
