@@ -1054,6 +1054,120 @@ body {
     font-size: 18px;
 }
 
+/* Light & Shadow Exhibition Page */
+.exhibit-content {
+    padding: 2rem 1rem;
+}
+
+.exhibit-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-left: calc(-1rem - 6rem);
+    width: calc(100% + 1rem + 6rem);
+    padding-bottom: 4rem;
+}
+
+.exhibit-header h2 {
+    margin: 0;
+    font-family: "Chau Philomene One", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+.exhibit-header .decor-dots {
+    color: var(--teal);
+    font-weight: 900;
+    letter-spacing: 40px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.exhibit-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.exhibit-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.exhibit-main img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.exhibit-main h3 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.exhibit-main p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+.exhibit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.exhibit-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.artist-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.artist-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.artist-text h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.artist-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.artist-section img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 @media (max-width: 900px) {
     .collection-items {
         grid-template-columns: 1fr;
