@@ -174,7 +174,7 @@ body {
     display: block;
     padding: 10px 16px;
     background: transparent;
-    border-radius: 0;
+    border-radius: 0 !important;
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -233,7 +233,8 @@ body {
     font-size: 20px;
      font-family: "corbel", sans-serif;
     line-height: 1.5;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
     
     .dropdown-menu {
@@ -328,9 +329,9 @@ body {
     background: #484696;
     font-family: "corbel", sans-serif;
     color: white;
-    padding: 8px 16px;
+    padding: 12px 24px;
     border-radius: 18px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 0;
     transition: background 0.3s ease;
     
@@ -448,6 +449,15 @@ body {
     line-height: 1.6;
 }
 
+.footer-section p a {
+    color: #ee1891;
+    text-decoration: none;
+}
+
+.footer-section p a:hover {
+    text-decoration: underline;
+}
+
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -546,11 +556,12 @@ body {
 }
 
 .event-card img {
-    width: 100%;
-    max-width: 320px;
+    width: 430px;
+    max-width: 430px;
     height: auto;
     border-radius: 8px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .event-card h3 {
@@ -564,6 +575,7 @@ body {
     font-size: 18px;
     line-height: 1.4;
     color: #333;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 900px) {
@@ -577,10 +589,19 @@ body {
     padding: 2rem 1rem 3rem;
 }
 
+.education-content .section-title h2 {
+    margin-bottom: 80px;
+}
+
+.education-content .decor-dots{
+    margin-bottom: 80px;
+}
+
 .education-subtitle {
     font-size: 35px;
-    color: #555;
+    color: #777;
     margin: 0 0 2.5rem;
+    margin-bottom: 100px;
 }
 
 .education-list {
@@ -600,6 +621,7 @@ body {
     margin: 0 0 0.75rem;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .education-text ul {
@@ -790,6 +812,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     color: var(--teal);
+    margin-bottom: 80px;
 }
 
 .about-header .decor-dots {
@@ -798,6 +821,7 @@ body {
     letter-spacing: 40px;
     font-size: 40px;
     margin: 0;
+    margin-bottom: 80px;
 }
 
 .about-intro {
@@ -1099,7 +1123,7 @@ body {
 
 .exhibit-main img {
     width: 100%;
-    height: 400px;
+    height: 430px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -1343,7 +1367,7 @@ body {
     }
 
     .container {
-        max-width: 320px;
+        max-width: 100%;
         margin: 1rem auto;
         padding: 0 0.75rem;
         width: 100%;
@@ -1363,7 +1387,7 @@ body {
     }
 
     .section-title h2 {
-        font-size: 26px;
+        font-size: 30px;
         margin-bottom: 12px;
     }
 
@@ -1379,8 +1403,9 @@ body {
     }
 
     .exhibit img {
-        width: 140px;
-        height: auto;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
         margin: 0 auto;
     }
 
@@ -1418,7 +1443,7 @@ body {
     }
 
     .support-image img {
-        width: 160px;
+        width: 280px;
         height: auto;
         margin: 0 auto;
     }
@@ -1437,5 +1462,146 @@ body {
     .footer-bottom p {
         font-size: 12px;
         margin: 0;
+    }
+
+    .about-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .about-header h2 {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .about-header .decor-dots {
+        margin-bottom: 0;
+        font-size: 16px;
+        letter-spacing: 6px;
+        margin-top: 0.5rem;
+    }
+
+    .membership-subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .membership-content .section-title h2 {
+        font-size: 30px;
+    }
+
+    .events-subtitle,
+    .education-subtitle,
+    .admissions-text p,
+    .membership-subtitle {
+        font-size: 18px !important;
+    }
+
+    .event-card {
+        text-align: left;
+    }
+
+    .event-card img {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .admissions-image {
+        margin-top: 20px;
+    }
+
+    .permanent-collection-header h2 {
+        font-size: 30px;
+    }
+
+    .permanent-collection-header .decor-dots {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .artist-section {
+        grid-template-columns: 1fr !important;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    .artist-section img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+
+    .exhibit-header {
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .exhibit-header h2 {
+        font-size: 30px;
+    }
+
+    .exhibit-header .decor-dots {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .exhibit-content {
+        padding: 1rem 0;
+        overflow-x: hidden;
+    }
+
+    .exhibit-details {
+        width: 100%;
+    }
+
+    .exhibit-main img {
+        width: 100%;
+        height: auto;
+    }
+
+    .upcoming-header h2 {
+        font-size: 30px;
+    }
+
+    .upcoming-header .decor-dots {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .upcoming-item h3 {
+        font-size: 22px;
+    }
+
+    .upcoming-item p {
+        font-size: 14px;
+    }
+
+    .past-highlights-header h2 {
+        font-size: 30px;
+    }
+
+    .past-highlights-header .decor-dots {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .highlight-item h3 {
+        font-size: 22px;
+    }
+
+    .highlight-item p {
+        font-size: 14px;
+    }
+
+    .footer-section p a {
+        color: #ee1891;
+        text-decoration: none;
+    }
+
+    .footer-section p a:hover {
+        text-decoration: underline;
     }
 }
