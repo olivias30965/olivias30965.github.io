@@ -73,7 +73,7 @@ body {
 }
 
 .logo-center img {
-    height: 100px;
+    height: 130px;
     object-fit: contain;
     width: auto;
 }
@@ -102,11 +102,11 @@ body {
     border: none;
     background: #484696;
     color: white;
-    padding: 10px 24px;
+    padding: 14px 32px;
     border-radius: 25px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     transition: background 0.3s ease;
     text-decoration: none;
 }
@@ -117,11 +117,11 @@ body {
 }
 
 .btn.ticket {
-    background: #484696;
+    background: #B81472;
 }
 
 .btn:hover {
-    background: #B81472;
+    background: #484696;
 }
 
 .main-nav {
@@ -977,7 +977,88 @@ body {
     line-height: 1.5;
 }
 
+/* Permanent Collection Page */
+.permanent-collection-content {
+    padding: 2rem 1rem;
+}
+
+.permanent-collection-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.permanent-collection-header h2 {
+    margin: 0;
+    font-family: "Chau Philomene One", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+.permanent-collection-header .decor-dots {
+    color: var(--teal);
+    font-weight: 900;
+    letter-spacing: 40px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.collection-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 100%;
+    margin-top: 8rem;
+}
+
+.collection-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.collection-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.collection-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    order: 2;
+}
+
+.collection-item h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+}
+
+.collection-item p {
+    margin: 0.3rem 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.collection-item strong {
+    font-weight: 600;
+    font-size: 18px;
+}
+
 @media (max-width: 900px) {
+    .collection-items {
+        grid-template-columns: 1fr;
+    }
+
     .about-intro {
         grid-template-columns: 1fr;
     }
@@ -1026,7 +1107,7 @@ body {
     .hamburger span {
         width: 24px;
         height: 3px;
-        background: white;
+        background: #484696;
         border-radius: 2px;
         transition: all 0.3s ease;
     }
@@ -1092,7 +1173,10 @@ body {
     }
 
     .top-actions {
-        display: none;
+        display: flex;
+        position: absolute;
+        right: -1rem;
+        top: 4rem;
     }
 
     .logo-center img {
