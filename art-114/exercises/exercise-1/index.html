@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+
+
+</head>
+<body>
+    <img id="backgroundImage" src="images/ocean.png" alt="background">
+
+    <h1>Click Me To Relax</h1>
+
+    <div>
+        <button>Click Me</button>
+    </div>
+
+    <script>
+        const button = document.querySelector('button');
+        const image = document.getElementById('backgroundImage');
+        const heading = document.querySelector('h1');
+        
+        button.addEventListener('click', function() {
+            image.style.opacity = image.style.opacity === '1' ? '0' : '1';
+            heading.textContent = image.style.opacity === '1' ? 'aahh relaxing' : 'Click Me To Relax';
+        });
+    </script>
+</body>
+</html>
